@@ -1,0 +1,37 @@
+body{
+    background: #3e0000;
+    margin: 0;
+    padding: 0;
+}
+.visual{
+    width: 180px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    background: #ff3e3e;
+    transition: 1s;
+    transform-origin: right bottom;
+}
+.visual:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transition: 2s;
+    transform-origin: right bottom;
+    
+}
+.visual:hover{
+    transform: rotate(45deg);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+}
+.visual:hover::before{
+    background: #e22c2d;
+    transform: rotate(450deg) translate(100px);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
